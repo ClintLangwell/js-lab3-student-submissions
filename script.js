@@ -150,4 +150,26 @@ const findAverageScore = (array) =>{
 
  //console.log(filter90AndAbove(submissions));
 
- 
+ // Etended challenges are below this comment!!!!!!
+// extra challange 1
+ const createRange = (start, end) => {
+    const intArray = [];
+    
+    for(let i = start; i <= end; i++){
+        intArray.push(i);
+    };
+    return intArray;
+ };
+
+ //console.log(createRange(1, 5));
+
+// extra challange 2
+const countElements = (arrayOfStrings) => {
+    let object = arrayOfStrings.reduce((accumulator, currentValue, i)=>{
+        accumulator[i] = currentValue ;
+        return accumulator;
+    }, arrayOfStrings);
+    return object;
+};
+
+console.log(countElements(["a", "b", "c", "a", "b"]));
